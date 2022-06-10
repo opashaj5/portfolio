@@ -13,39 +13,64 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
     <link rel="manifest" href="./images/site.webmanifest">
     <title>Ornela Pashaj</title>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- GitHub Button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/0c805108bd.js" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script defer src="main.js"></script>
 </head>
 
 <body>
-    <div class="logo">
-        <h1>Ornela Pashaj</h1>
-        <p>Software Engineer</p>
+    <div class="splash">
+        <h2 class="fade-in">Hello World.</h2>
     </div>
+
+    <!-- Nav -->
     <nav>
-        <div class="navbar-items">
-            <a class="navbar-item" href="#home">Home</a>
-            <a class="navbar-item" href="#about">About</a>
-            <a class="navbar-item" href="#projects">Projects</a>
-            <a class="navbar-item" href="#resume">Resume</a>
-            <a class="navbar-item" href="#contact">Contact</a>
-        </div>
+        <a class="navbar-item" href="#about">About</a>
+        <a class="navbar-item" href="#projects">Projects</a>
+        <a class="navbar-item" href="#resume">Resume</a>
+        <a class="navbar-item" href="#contact">Contact</a>
     </nav>
 
     <!-- About -->
-    <section class="section reveal load-hidden section-padding">
-        <div class="container">
-            <div class="column">
-                <h1 class="title">About Me:</h1>
-                <h2 class="subtitle"></h2>
+    <section id="about">
+        <h1>Ornela Pashaj</h1>
+        <h3>Full-Stack Web Developer</h3>
+        <h1>A Little About Me</h1>
+        <p>I'm a recent graduate of General Assembly's Software Engineering Immersive Course with fundamental
+            knowledge of software
+            design and development. Coding has quickly become a passion of mine being able to combine the worlds of
+            logic and creative design. I'm hoping to optimize my newfound skills to help bring clients ideas and
+            visions to life.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="carousel">
+            <div class="carousel-item">
+                <a href="https://opashaj5.github.io/Card-War/" target="_blank">
+                    <img src="./images/cardwar.png" />
+                </a>
             </div>
+            <div class="carousel-item"> <a href="" target="_blank">
+                    <img src="" />
+                </a></div>
+            <div class="carousel-item"> <a href="" target="_blank">
+                    <img src="" />
+                </a></div>
+            <div class="carousel-item"> <a href="" target="_blank">
+                    <img src="" />
+                </a></div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
+    <footer id="contact">
         <div class="content has-text-centered">
             <h1 class="footer-style" style="font-size: 150%; font-weight: 600">Contact Me:</h1>
             <div class="column no-padding">
