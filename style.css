@@ -160,6 +160,11 @@ section {
     }
 }
 
+.self-image {
+    height: 250px;
+    width: 200px;
+}
+
 img {
     width: 70%;
     border-radius: 5px;
