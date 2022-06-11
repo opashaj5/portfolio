@@ -1,15 +1,78 @@
-html {
-    color: black;
-    background-color: white;
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
 }
 
 nav {
+    display: flex;
     position: fixed;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 3px gray;
     z-index: 1;
-    background-color: aqua;
-    border: 1px black solid;
     left: 0;
     right: 0;
+    top: 0;
+}
+
+.navbar-item {
+    color: black;
+    text-decoration: none;
+    background:
+        linear-gradient(to right,
+            orange,
+            orange),
+        linear-gradient(to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.navbar-item:hover {
+    font-weight: lighter;
+    background-size: 0 3px, 100% 3px;
+}
+
+section {
+    text-align: center;
+}
+
+.name {
+    font-size: 50px;
+    padding-top: 90px;
+    margin-bottom: 0;
+}
+
+.my-title {
+    margin-top: 0px;
+    padding-bottom: 50px;
+    letter-spacing: 5px;
+}
+
+.about-me {
+    margin-bottom: 50px;
+    width: 500px;
+    text-align: center;
+    left: 50px;
+    right: 50px;
+}
+
+#projects {
+    position: absolute;
+    right: 0px;
+    width: 500px;
+    padding: 10px;
+    margin: 0px;
+    align-items: center;
+    top: 400px;
 }
 
 .carousel {
@@ -18,7 +81,6 @@ nav {
 
 .carousel-item {
     height: 300px;
-    padding: 1em;
     display: none;
 }
 
@@ -28,11 +90,11 @@ nav {
 
 .carousel-nav {
     width: 100%;
-    padding: 20px 0;
     position: absolute;
     bottom: 0;
     left: 0;
     text-align: center;
+    bottom: -80px;
 }
 
 .carousel-btn {
@@ -46,7 +108,12 @@ nav {
 }
 
 .carousel-btn-selected {
-    background-color: gray;
+    background-color: orange;
+}
+
+.app-title {
+    padding: 0;
+    font-weight: bold;
 }
 
 .splash {
@@ -56,9 +123,9 @@ nav {
     width: 100%;
     height: 100vh;
     line-height: 90vh;
+    color: black;
     background-color: white;
     z-index: 200;
-    color: black;
     text-align: center;
 }
 
@@ -70,9 +137,9 @@ nav {
     width: 100%;
     height: 100vh;
     line-height: 90vh;
+    color: black;
     background-color: white;
     z-index: -10;
-    color: black;
     text-align: center;
     transition: all 1.5s;
 }
@@ -92,7 +159,56 @@ nav {
 }
 
 img {
-    width: 30%;
+    width: 70%;
     border-radius: 5px;
-    margin-left: 30%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+}
+
+img:hover {
+    box-shadow: 5px 5px 10px 5px gray;
+}
+
+img:active {
+    transform: scale(0.98);
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px -3px 3px gray;
+    font-size: smaller;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.connect {
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+i {
+    font-size: 30px;
+    color: black;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+i:hover {
+    color: gray;
+}
+
+i:active {
+    color: orange;
+}
+
+i:visited {
+    text-decoration: none;
 }
